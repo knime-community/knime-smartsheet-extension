@@ -1,5 +1,5 @@
 [workspace]
-channels = ["knime", "conda-forge", "plabedan"]
+channels = ["knime/label/LTS-5-12", "knime", "conda-forge", "plabedan"]
 name = "knime-smartsheet-extension"
 platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
@@ -11,8 +11,8 @@ format = { cmd = "ruff format ." }
 python = "3.13.*"
 pytest = "*"
 ruff = "*"
-knime-extension = "*"
-knime-python-base = "*"
+knime-extension = "5.12.*"
+knime-python-base = "5.12.*"
 smartsheet-python-sdk = "*"
 knime-python-versions = "5.12.*"
 
